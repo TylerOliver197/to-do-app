@@ -1,3 +1,3 @@
-# to-do-app
+# To-Do-App
 
-Just another To Do App
+Just a simple To Do App!

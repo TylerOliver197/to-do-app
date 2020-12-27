@@ -1,9 +1,8 @@
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
 
-  <title>To Do App</title> <!-- This is the title of the page -->
+  <title id="title">To Do App</title> <!-- This is the title of the page -->
   <meta name="description" content="To Do App"> <!-- Defines the description of the page -->
   <meta name="author" content="Tyler Oliver"> <!-- Defines the author of the page -->
   <!-- I will create my own CSS so no need to <link> to an external style sheet -->
@@ -13,17 +12,17 @@
 <body>
   <header>
     <h1>To Do List</h1>
-    <p>What's on your to do list today? Just type in what it is you have to do and we will make a list for you!</p>
+    <p id="description">What's on your to do list today? Just type in what it is you have to do and we will make a list for you!</p>
   </header>
   <div>
-    <label for="tasks">What do you have to do today?</label><br>
+    <label id="label1" for="tasks">What do you have to do today?</label><br>
     <input id="myInput" type="test" value="Do the Dishes">
-    <button type="submit" onclick="newElement()">Submit</button>
+    <button id="myButton" type="submit" onclick="newElement()">Submit</button>
   </div>
   <div>
    <ul id="myUL">
-     <li>workout</li>
-     <li>do dishes</li>
+     <li>Workout</li>
+     <li>Do Dishes</li>
     </ul>
   </div>
 </body>

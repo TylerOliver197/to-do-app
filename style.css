@@ -1,0 +1,89 @@
+:root { /* Same as html if the whole code was wrapped in an html tag */
+  --color-1: #FEF3DC; /* These set values */
+  --color-2: #FDCD6D;
+  --color-3: #FBA90A;
+  --color-4: #9C6902;
+  --color-5: #342609;
+  font-size: 16px; /*This is the default rem value */
+}
+
+*, /* This is a symbol for the entire doc */
+*::before,
+*::after {
+  box-sizing: border-box; /* incorporates padding into height and width attributes. Recommend using */
+}
+
+body { /* Applies to everything, even header */
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-5);
+  margin: 0;
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+header {
+  color: var(--color-2);
+  background: var(--color-3);
+  position: relative;
+  top: -21px;
+}
+
+#title { /* the # is an ID selector */
+  font-family: "times new roman";
+}
+
+#description {
+  color: var(--color-5);
+}
+
+#label1 {
+  margin: 16px 16px 16px 16px;
+}
+
+#myInput {
+  margin: 16px 16px 16px 16px;
+}
+
+#myButton {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: var(--color-3);
+  border: none;
+  border-radius: 15px;
+  box-shadow: -10px 10px var(--color-4);
+}
+
+#myButton:hover {
+  background-color: var(--color-1);
+}
+
+#myButton:active {
+  background-color: var(--color-1);
+  box-shadow: -5px 5px var(--color-4);
+  transform: translateY(5px) translateX(-5px);
+}
+.close {
+  margin: 10px 0px 0px 5px;
+}
+ul {
+  list-style-type: none;
+} /* makes the bullet points from the ul dissapear */
